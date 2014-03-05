@@ -9,8 +9,6 @@
     $ext = array();
     $week = array();
     
-    //194.105.101.199,DE,plugin,Codiad-PullTester,
-
     foreach (scandir($data) as $name){
         if($name == '.' || $name == '..' || $name == '.htaccess'){
             continue;
