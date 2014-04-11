@@ -119,7 +119,7 @@
             
             <h2>Submit a Plugin / Theme</h2>
             
-            <p>If you would like to submit a plugin or theme, please email the GitHub repository and information to <a href="mailto:dev@codiad.com">dev[at]codiad.com</a> or open an issue on <a href="https://github.com/Codiad/Codiad/issues/">Github</a>.</p>
+            <p>If you would like to submit a plugin or theme, please email the GitHub repository and description to <a href="mailto:dev@codiad.com">dev[at]codiad.com</a> or open an issue on <a href="https://github.com/Codiad/Codiad/issues/">Github</a> (New Issue).</p>
             
             <p>Not sure how to get started? Check out the <a href="https://github.com/Codiad/Codiad-Plugin-Template" target="_blank">Codiad Plugin Template</a>.</p>
             
