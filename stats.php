@@ -1,7 +1,7 @@
 <?php
 
     //header('Content-Type: application/json');
-
+    echo getcwd();
     $data = getcwd().'/data';
     $ip = array();
     $country = array();
