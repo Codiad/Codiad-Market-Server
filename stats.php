@@ -45,7 +45,7 @@
                         }
                     }
                     
-                    if(trim($line[3]) != '') {
+                    if(trim($line[3]) != '' && trim($line[3]) != 'https:') {
                         if(substr($line[3], 0, 6) != "Codiad") {
                             $line[3] = 'Codiad-'.$line[3];
                         }
