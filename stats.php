@@ -16,7 +16,7 @@
         if(is_file($data.'/'.$name)){
             $file = fopen($data.'/'.$name,'r');
             while(!feof($file)) { 
-                $line = split(",",fgets($file));
+                $line = explode(",",fgets($file));
                 $hash = hash("crc32", $line[0]);
 
                 if($line[3] != 'default' && strtolower($line[3]) != 'clear') {
