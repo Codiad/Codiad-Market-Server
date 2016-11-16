@@ -9,8 +9,8 @@
         
         if(isset($_GET['o']) && $_GET['o'] != '') {
             // optout existing plugins
-            foreach(split(",", $_GET['o']) as $data) {
-                $line = split(":", $data);
+            foreach(explode(",", $_GET['o']) as $data) {
+                $line = explode(":", $data);
                 file_put_contents("../data/".date("Y-W").".log", $_SERVER['REMOTE_ADDR'].",".lookupGeoLocation($_SERVER['REMOTE_ADDR']).",".$line[0].",".$line[1].",\r\n", FILE_APPEND | LOCK_EX);
             }    
         }
@@ -30,7 +30,7 @@
             if(is_file($data.'/'.$name)){
                 $file = fopen($data.'/'.$name,'r');
                 while(!feof($file)) { 
-                    $line = split(",",fgets($file));
+                    $line = explode(",",fgets($file));
     
                     if(!in_array($line[0],$ip)) {
                         array_push($ip,$line[0]);
